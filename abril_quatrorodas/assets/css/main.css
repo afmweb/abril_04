@@ -1,0 +1,167 @@
+body, nav, ul, li, a  {margin: 0; padding: 0;}
+body {font-family: "calibri", "Myriad Pro Regular",Helvetica, Arial, sans-serif; }
+a {text-decoration: none;}
+.container {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.toggleMenu {
+    display:  none;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+.nav {
+    list-style: none;
+    *zoom: 1;
+    background:#ED1C24;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+}
+.nav.nav1 a {
+    padding: 10px 15px;
+    color:#fff;
+}
+.nav.nav1 a:hover {
+    background: #242424
+}
+.nav.nav1 a:visited {
+    background: #242424
+}
+
+
+.nav.nav1 > li> a {
+    padding: 35px 15px;
+    color:#fff;
+}
+.nav > li> a {
+    padding: 5px 10px;
+    color:#fff;
+}
+.nav > li> a:hover {
+    background: #333;
+}
+
+
+.reset-padding{margin-right: -10px; float: right; margin-top: -5px;}
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+    border-top: 1px solid red;
+}
+.nav > li > .parent {
+    background-image: url("../img/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background: #F14C51;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #ccc;
+}
+.nav li li li a {
+    background:#E64B39;
+    z-index:200;
+    border-top: 1px solid red;
+}
+.nav h1 {
+    background-image: url("../img/logo.png");
+    height: 78px;
+    width: 226px;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    cursor: pointer;
+}
+.nav h1 a {
+    position: absolute;
+    left: -999em;
+}
+.nav h2 {
+    background-image: url("../img/banner-xs.png");
+    height: 60px;
+    width: 320px;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+.nav h2 a {
+    position: absolute;
+    left: -999em;
+}
+
+a.b-home{ padding: 0; margin: 0}
+.bg-black{
+    background: #242424;
+}
+.bg-rosa{
+    background: #D41F1F;
+}
+
+.img-mais{margin-top: 4px;; border: none}
+.busca{background: #ED1C24; border: solid 1px #ED1C24;}
+.input-group-addon, button{background: #ED1C24; color: #fff; font-size: 20px; border: none; cursor: pointer}
+.hidden-xs form{margin-top: 30px;}
+.img-banner{text-align: center}
+.marginTop60{margin-top: 60px}
+.img-responsive2{margin: 0;}
+a.link-carros{color: #000; font-size: 20px; font-weight: bold}
+footer h3 a{color: red; font-size: 16px; font-weight: bold;}
+footer h3{top: 300px; position: absolute;}
+@media screen and (max-width: 768px) {
+    .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+    background-image: url("../img/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+    .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+.nav.nav1 > li> a {
+    padding: 10px 15px;
+    color:#fff;
+}
+footer h3{top: auto; position: relative;}    
+
+}
+

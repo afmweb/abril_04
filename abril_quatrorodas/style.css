@@ -1,0 +1,9 @@
+/*
+Theme Name: Quatro Rodas
+Theme URI: https://github.com/wpbrasil/odin
+Description: Integrar o layout do site em wordpress utilizando includes e boas práticas.
+Author: André Marcelino
+Author URI: http://www.andremarcelino.com.br/
+Tags: wordpress, web, php, html5, css3, bootstap
+*/
+@import url(assets/css/main.css);
